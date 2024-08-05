@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Games Website</title>
+    <link rel="stylesheet" href="styles_news.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="https://www.linkedin.com/in/german-leško-73ba17241/"><img src="link.png" class="zs"></a>
+            <a href="Home.html">Home</a>
+            <a class="active" href="news.html">News</a>
+            <a href="sale.html">Sale</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <h1 id="welcomeText"></h1>
+        <div class="first_s">
+            <a><img src="news_photo.jpeg" class="news_photo"></a>
+            <p class="rpg-text">We're thrilled to have you join our community dedicated to the love of role-playing games. Whether you're a seasoned adventurer or new to the world of RPGs, this is the perfect place to share your passion, ask questions, and connect with fellow gamers. From tabletop classics to the latest video game releases, our forum covers a wide range of topics to satisfy your RPG cravings.
+            <br><br> Feel free to explore, contribute, and start discussions about your favorite games, characters, and campaigns. Remember, this is a friendly space for all, so respect and kindness are key. Let's embark on epic quests and create unforgettable stories together! Welcome aboard, and happy gaming!</p>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm" action="save_data.php" method="POST">
+              <p class="news_t">
+                Got ideas, news, or bug reports? Share them here! We're eager to hear your thoughts and keep our community informed. Your contributions help make our forum better for everyone. Let's keep the adventure alive!
+              </p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

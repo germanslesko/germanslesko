@@ -1,0 +1,254 @@
+body{
+
+font-family: Comic Sans MS;
+  background-image: url("background_img.jpeg")
+}
+.background-image {
+  background-image: url('back.jpeg'); /* Путь к изображению */
+  background-size: cover; /* Растягиваем изображение на всю область элемента */
+  background-position: center; /* Центрируем изображение по горизонтали и вертикали */
+  opacity: 0.8; /* Прозрачность фона (от 0 до 1) */
+}
+
+
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16a17c;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 80%; /* Пример максимальной ширины */
+  margin-left: auto; /* Для выравнивания по центру */
+  margin-right: auto; /* Для выравнивания по центру */
+  border: 4px solid black;
+}
+
+
+.topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #aef5d8;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0f5744;
+  color: white;
+}
+.zs {
+  height: 22px;
+  width: 26px;
+}
+.first_s {
+margin-top: 30px;
+max-width: 80%; /* Пример максимальной ширины */
+margin-left: auto; /* Для выравнивания по центру */
+margin-right: auto; /* Для выравнивания по центру */
+background-color: #16a17c;
+border-radius: 10px;
+text-align: center;
+border: 4px solid black;
+margin-bottom: 20px;
+
+}
+.rpg-text {
+  font-size: 24px; /* Изменяем размер текста по вашему желанию */
+  color: #FFFFFF;
+}
+.your-image-class{
+  height: 50px;
+  width: 50px;
+
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 80%; /* Максимальная ширина видео */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding-bottom: 10%; /* Уменьшение высоты видео для отображения фона */
+  overflow: hidden;
+  background-color: #16a17c;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news_main {
+  margin-top: 30px;
+  max-width: 80%; /* Пример максимальной ширины */
+  margin-left: auto; /* Для выравнивания по центру */
+  margin-right: auto; /* Для выравнивания по центру */
+  background-color: #16a17c;
+  border-radius: 10px;
+  text-align: center;
+  border: 4px solid black;
+}
+
+.news-heading {
+ background-color: #148265;
+ border-radius: 10px;
+ color: white;
+ border: 2px solid black;
+}
+
+.news-content {
+  display: flex; /* Располагаем контент новостей в строку */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  color: white;
+  font-size: 20px;
+
+}
+
+
+.zss {
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  border: 12px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Устанавливаем начальную прозрачность */
+  transition: opacity 0.5s ease; /* Добавляем анимацию для свойства прозрачности */
+}
+
+.zss:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 1; /* Устанавливаем полную прозрачность для появления */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 80.5%; /* Пример максимальной ширины */
+  margin-left: auto; /* Для выравнивания по центру */
+  margin-right: auto; /* Для выравнивания по центру */
+  margin-top: 20px;
+
+}
+
+.block {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.spell {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 4px solid black;
+}
+
+.spell-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.popup-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s;
+    z-index: 9999;
+    display: none;
+    background-color: #29d6a9;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: rgba(8, 71, 25, 0.7);
+}
+
+.popup-banner img {
+    max-width: 100%;
+
+    margin-bottom: 20px; /* Увеличим отступ между изображением и текстом */
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Отступ от верхнего края */
+    right: 10px; /* Отступ от правого края */
+    border-radius: 10px;
+
+}
+.text_baner{
+  color: white;
+  font-size: 17px;
+}
+
+
+.rating {
+  position: relative; /* Для абсолютного позиционирования звезд */
+  max-width: 79%;
+  font-size: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16a17c; /* Цвет фона */
+  padding: 10px;
+  margin: 20px auto; /* Отступы сверху и снизу, а также автоматическое центрирование по горизонтали */
+  margin-left: auto; /* Для выравнивания по центру */
+  margin-right: auto;
+  border-radius: 10px; /* Скругление углов */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень */
+  border: 4px solid black; /* Внешняя граница */
+}
+
+
+
+.star {
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s;
+  position: relative; /* Устанавливаем относительное позиционирование для псевдоэлементов */
+}
+
+.star::before {
+  content: '\2605'; /* Звезда */
+  position: absolute; /* Абсолютное позиционирование относительно родителя */
+  color: gold; /* Золотой цвет */
+  opacity: 0; /* По умолчанию невидимые */
+  transition: opacity 0.3s; /* Анимация появления */
+}
+
+.star:hover::before,
+.star.active::before {
+  opacity: 1; /* При наведении или активации показываем звезду */
+}

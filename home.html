@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPG Games Website</title>
+  <link rel="stylesheet" href="styles_home.css">
+  <script src="script_home.js"></script>
+</head>
+<body>
+
+
+  <div class="topnav">
+    <a href="https://www.linkedin.com/in/german-leško-73ba17241/"><img src="link.png" class="zs"></a>
+    <a class="active" href="Home.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="sale.html">Sale</a>
+    <a href="promotion.html">Promotion</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+  <div class="first_s">
+    <p class="rpg-text"> Welcome to the world of adventure and fantasy! We offer a variety of RPG games so you can immerse yourself in thrilling stories, explore amazing worlds and meet unique characters. Get ready for an exciting journey full of dangers and mysteries. Our games will give you an unforgettable experience and help you discover new horizons of fantasy adventures! </p>
+  </div>
+
+
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/JYmDwAdjpmA" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
+
+  <!-- Блок с последними новостями -->
+  <div class="news_main">
+  <h2 class="news-heading">Lastest News - Battle of wonders</h2>
+  <div class="news-content">
+    <ul>
+      <li>"Bloodstorm" deals +10% damage, spell's cooldown reduced by 5%</li>
+      <li>"Tree of Life" heals -20% health, healing speed increased by 10%</li>
+      <li>"Time Sand" spell only stops time by 3 seconds instead of 5 seconds</li>
+      <li>"Blood Berserk" spell has +15% increased damage and -10% durability</li>
+      <li>"Poison Kiss" spell +20% poison damage +10% damage rate</li>
+      <li>"Ancestral Defence" spells +40% damage absorption, damage -10%</li>
+      <li>"Voice of Apokalepis" spell +70% damage, -30% health reserve</li>
+    </ul >
+    <img id="newsImage" class="zss fade-in" src="battle_of_w1.jpeg" alt="Battle of Wonders">
+  </div>
+</div>
+
+<div class="container">
+  <div class="block">
+    <img class="spell" src="blood_storm.jpeg" onclick="showDescription('Bloodstorm', 'description1')">
+    <div class="spell-description" id="description1">Bloodstorm</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="tree_spell.jpeg" onclick="showDescription('Tree of Life', 'description2')">
+    <div class="spell-description" id="description2">Tree of Life</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="time_spell.jpeg" onclick="showDescription('Time Sand', 'description3')">
+    <div class="spell-description" id="description3">Time Sand</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="berserk_spell.jpeg" onclick="showDescription('Blood Berserk', 'description4')">
+    <div class="spell-description" id="description4">Blood Berserk</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="poison_spell.jpeg" onclick="showDescription('Poison Kiss', 'description5')">
+    <div class="spell-description" id="description5">Poison Kiss</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="shield_spell.jpeg" onclick="showDescription('Ancestral Defence', 'description6')">
+    <div class="spell-description" id="description6">Ancestral Defence</div>
+</div>
+
+<div class="block">
+    <img class="spell" src="apocal_spell.jpeg" onclick="showDescription('Voice of Apokalepis', 'description7')">
+    <div class="spell-description" id="description7">Voice of Apokalepis</div>
+</div>
+</div>
+
+<div class="popup-banner" id="popupBanner">
+    <div class="close-button-container">
+        <button class="close-button" onclick="closeBanner()">X</button>
+    </div>
+    <img src="banner_gold.jpeg" alt="Your Image">
+    <p class = "text_baner">
+        "Ready to level up your gaming experience? Look no further! Introducing Golden Pesos - your passport to unlock new adventures and conquer virtual realms. With unbeatable prices and exclusive deals, why settle for less? Elevate your game today with Golden Pesos. Your quest for the ultimate gaming currency starts here!"
+    </p>
+</div>
+
+
+<div class="rating">
+  <span class="star" data-value="1">&#9734;</span>
+  <span class="star" data-value="2">&#9734;</span>
+  <span class="star" data-value="3">&#9734;</span>
+  <span class="star" data-value="4">&#9734;</span>
+  <span class="star" data-value="5">&#9734;</span>
+</div>
+
+<div id="popupBanner_r" class="popup-banner" style="display: none;">
+  <button class="close-button" onclick="closeBanner_r()">Close</button>
+  <p id="popupBannerText_r" style="color: white;"></p>
+</div>
+
+
+</body>
+</html>
